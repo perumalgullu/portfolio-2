@@ -29,11 +29,11 @@ const Hero = () => {
       <div className="relative w-full h-full">
   <ComputersCanvas />
 
-  <div className="absolute right-20 top-1/2 -translate-y-1/2 z-50 hidden lg:block">
+  <div className="absolute right-5 top-[65%] -translate-y-1/2 z-50 flex">
     <img
       src="profile.png"
       alt="Perumal"
-      className="w-[300px] h-[300px] rounded-full border-4 border-violet-500 object-cover shadow-[0_0_50px_#915EFF]"
+      className="w-[150px] h-[150px] md:w-[300px] md:h-[300px] rounded-full border-4 border-violet-500 object-cover shadow-[0_0_50px_#915EFF]"
     />
   </div>
 </div>
