@@ -49,24 +49,18 @@ export const navLinks: TNavLink[] = [
   },
 ];
 
-const services: TService[] = [
-  {
-    title: "Web Developer",
-    icon: web,
-  },
-  {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
-    title: "Backend Developer",
-    icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
-  },
-];
+const services: TService[] = [ 
+  { title: "Full Stack Developer", 
+    icon: web, }, 
+    { title: "AI Developer", 
+      icon: mobile, }, 
+      { title: "Flutter Developer", 
+        icon: backend, }, 
+        { title: "Computer Vision Enthusiast", 
+          icon: creator, },
+         ];
+
+
 
 const technologies: TTechnology[] = [
   {
@@ -123,60 +117,10 @@ const technologies: TTechnology[] = [
   },
 ];
 
-const experiences: TExperience[] = [
-  {
-    title: "React.js Developer",
-    companyName: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    companyName: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    companyName: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    companyName: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-];
+const experiences: TExperience[] = [ { title: "M.Sc Computer Science Student", company_name: "Nazareth College of Arts & Science", icon: starbucks, iconBg: "#383E56", date: "2024 - Present", points: [ "Currently pursuing postgraduate studies in Computer Science with focus on software development and emerging technologies.", "Learning Full Stack Web Development, Artificial Intelligence, and Computer Vision technologies.", "Building real-world academic and personal projects using React, Flutter, Python, Firebase, and MySQL.", "Actively exploring modern UI/UX design and scalable application development.", ], }, 
+{ title: "AI Smart Attendance System", company_name: "Personal Project", icon: tesla, iconBg: "#E6DEDD", date: "2025", points: [ "Developed an AI-powered smart attendance system using face recognition technology.", "Implemented real-time student face detection and automatic attendance marking using OpenCV.", "Integrated automated absent notifications and CSV-based attendance management.", "Focused on improving automation and reducing manual attendance processes.", ], }, 
+{ title: "E-Waste Management System", company_name: "Academic Project", icon: shopify, iconBg: "#383E56", date: "2025", points: [ "Built a web-based e-waste management platform for tracking electronic waste products.", "Implemented product categorization, cashback calculation, and database integration.", "Developed responsive frontend pages using PHP, MySQL, HTML, CSS, and JavaScript.", "Focused on sustainability and digital waste management solutions.", ], }, 
+{ title: "Full Stack & Mobile App Learning", company_name: "Self Learning", icon: meta, iconBg: "#E6DEDD", date: "2025 - Present", points: [ "Learning React.js, Flutter, Firebase, Tailwind CSS, and backend development technologies.", "Building portfolio projects and experimenting with modern UI designs and animations.", "Practicing API integration, authentication systems, and responsive application development.", "Continuously improving problem-solving and software engineering skills.", ], }, ];
 
 const testimonials: TTestimonial[] = [
   {
@@ -207,20 +151,20 @@ const testimonials: TTestimonial[] = [
 
 const projects: TProject[] = [
   {
-    name: "Car Rent",
+    name: "E-Waste Management System",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web-based e-waste management platform developed for tracking electronic waste products, cashback calculation, recycling workflow management, and product categorization using HTML and FIREBASE",
     tags: [
       {
-        name: "react",
+        name: "html",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "firebase",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "css",
         color: "pink-text-gradient",
       },
     ],
@@ -228,20 +172,20 @@ const projects: TProject[] = [
     sourceCodeLink: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "AI Smart Attendance System",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "AI-powered smart attendance system using face recognition technology to automatically detect students and mark attendance in real time. The system also sends absent notifications automatically and manages attendance records efficiently.",
     tags: [
       {
-        name: "react",
+        name: "pyhton",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "deepface",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "openCV",
         color: "pink-text-gradient",
       },
     ],
