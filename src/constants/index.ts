@@ -1,3 +1,4 @@
+import resumeapp from "../assets/resumeapp.png";
 import type {
   TNavLink,
   TService,
@@ -144,7 +145,7 @@ const projects: TProject[] = [
       },
     ],
     image: carrent,
-    sourceCodeLink: "https://github.com/",
+    sourceCodeLink: "https://ewaste-bafdd.web.app/",
   },
   {
     name: "AI Smart Attendance System",
@@ -168,26 +169,47 @@ const projects: TProject[] = [
     sourceCodeLink: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "AI Resume Builder App",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A modern Flutter-based AI Resume Builder application that helps users create professional resumes instantly. The app includes multiple resume templates, Firebase integration, user authentication, PDF generation, and smart AI-based resume content suggestions for students and professionals",
     tags: [
       {
-        name: "nextjs",
+        name: "flutter",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "firebase",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "dart",
         color: "pink-text-gradient",
       },
     ],
     image: tripguide,
     sourceCodeLink: "https://github.com/",
   },
+  {
+  name: "Internship Portal Website",
+  description:
+    "A modern internship finder platform built for students to explore internships, view opportunities, and apply easily through a clean and responsive interface.",
+  tags: [
+    {
+      name: "html",
+      color: "blue-text-gradient",
+    },
+    {
+      name: "css",
+      color: "green-text-gradient",
+    },
+    {
+      name: "firebase",
+      color: "pink-text-gradient",
+    },
+  ],
+  image: resumeapp,
+  sourceCodeLink: "https://perumalgullu.github.io/internship/",
+},
 ];
 
 export { services, technologies, experiences, testimonials, projects };
