@@ -40,55 +40,70 @@ type TConfig = {
 
 export const config: TConfig = {
   html: {
-    title: "John Doe — 3D Portfolio",
-    fullName: "John Doe",
-    email: "johndoe@mail.com",
+    title: "S Perumal  — AI Developer Portfolio",
+    fullName: "Perumal",
+    email: "perumalgullu05@gmail.com",
   },
+
   hero: {
-    name: "John Doe",
-    p: ["I develop 3D visuals, user", "interfaces and web applications"],
+    name: "Perumal",
+    p: [
+      "AI Developer | Full Stack Developer",
+      "Building Smart Web & Mobile Applications",
+    ],
   },
+
   contact: {
     p: "Get in touch",
     h2: "Contact.",
+
     form: {
       name: {
         span: "Your Name",
-        placeholder: "What's your name?",
+        placeholder: "Enter your name",
       },
-      email: { span: "Your Email", placeholder: "What's your email?" },
+
+      email: {
+        span: "Your Email",
+        placeholder: "Enter your email",
+      },
+
       message: {
         span: "Your Message",
-        placeholder: "What do you want to say?",
+        placeholder: "Write your message here",
       },
     },
   },
+
   sections: {
     about: {
       p: "Introduction",
+
       h2: "Overview.",
-      content: `I'm a skilled software developer with experience in TypeScript and
-      JavaScript, and expertise in frameworks like React, Node.js, and
-      Three.js. I'm a quick learner and collaborate closely with clients to
-      create efficient, scalable, and user-friendly solutions that solve
-      real-world problems. Let's work together to bring your ideas to life!`,
+
+      content: `I'm S. Perumal, a passionate postgraduate MSc Computer Science student at Nazareth College of Arts & Science, Chennai. I enjoy transforming ideas into real-world applications using modern web technologies and creative problem-solving techniques. I completed my Bachelor of Computer Applications (BCA) at Vel Tech Ranga Sanku Arts and Science College, Chennai with a CGPA of 7.5 in 2024. My interests include Full Stack Web Development, Backend Systems, Artificial Intelligence, Computer Vision, and learning emerging technologies. I love building responsive web applications, AI-powered systems, and innovative digital solutions that solve practical problems.`,
     },
+
     experience: {
-      p: "What I have done so far",
-      h2: "Work Experience.",
+      p: "My Journey",
+
+      h2: "Experience.",
     },
+
     feedbacks: {
-      p: "What others say",
+      p: "What people say",
+
       h2: "Testimonials.",
     },
+
     works: {
-      p: "My work",
+      p: "My Projects",
+
       h2: "Projects.",
-      content: `Following projects showcases my skills and experience through
-    real-world examples of my work. Each project is briefly described with
-    links to code repositories and live demos in it. It reflects my
-    ability to solve complex problems, work with different technologies,
-    and manage projects effectively.`,
+
+      content: `These projects showcase my technical skills and practical experience in Full Stack Development, Artificial Intelligence, and Mobile Application Development.
+
+Each project demonstrates my ability to build modern applications, solve complex problems, and work with technologies like React, Flutter, Python, OpenCV, Firebase, and MySQL.`,
     },
   },
 };
