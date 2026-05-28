@@ -6,11 +6,48 @@ import { config } from "../../constants/config";
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen mx-auto overflow-hidden">
+    <section className="relative w-full h-screen mx-auto overflow-hidden bg-primary">
 
-      {/* TEXT SECTION */}
+      {/* DESKTOP 3D MODEL */}
+      <div className="hidden md:block absolute inset-0">
+        <ComputersCanvas />
+      </div>
+
+      {/* MOBILE HERO */}
+      <div className="md:hidden flex flex-col items-center justify-center h-screen px-6 text-center relative z-10">
+
+        <img
+          src="profile.png"
+          alt="profile"
+          className="
+            w-[140px]
+            h-[140px]
+            rounded-full
+            object-cover
+            border-4
+            border-[#915EFF]
+            shadow-[0_0_40px_rgba(145,94,255,0.8)]
+            mb-6
+          "
+        />
+
+        <h1 className="text-white font-black text-[42px] leading-tight">
+          Hi, I'm{" "}
+          <span className="text-[#915EFF]">
+            {config.hero.name}
+          </span>
+        </h1>
+
+        <p className="text-white-100 text-[18px] mt-4 leading-[32px]">
+          {config.hero.p[0]}
+          <br />
+          {config.hero.p[1]}
+        </p>
+      </div>
+
+      {/* DESKTOP HERO */}
       <div
-        className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5 z-10`}
+        className={`${styles.paddingX} hidden md:flex absolute inset-0 top-[120px] max-w-7xl mx-auto flex-row items-start gap-5 z-10`}
       >
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
@@ -22,7 +59,6 @@ const Hero = () => {
             Hi, I'm{" "}
             <span className="text-[#915EFF]">
               {config.hero.name}
-
             </span>
           </h1>
 
@@ -34,16 +70,14 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* PROFILE IMAGE */}
-      <div className="absolute right-4 top-[65%] md:top-1/2 -translate-y-1/2 z-20">
+      {/* DESKTOP PROFILE IMAGE */}
+      <div className="hidden md:block absolute right-10 top-1/2 -translate-y-1/2 z-20">
         <img
-          src="profile.png"
+          src="/profile.png"
           alt="profile"
           className="
-            w-[110px]
-            h-[110px]
-            md:w-[280px]
-            md:h-[280px]
+            w-[280px]
+            h-[280px]
             rounded-full
             object-cover
             border-4
@@ -51,11 +85,6 @@ const Hero = () => {
             shadow-[0_0_40px_rgba(145,94,255,0.8)]
           "
         />
-      </div>
-
-      {/* DESKTOP 3D MODEL ONLY */}
-      <div className="hidden md:block absolute inset-0">
-        <ComputersCanvas />
       </div>
 
       {/* SCROLL */}
