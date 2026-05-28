@@ -122,33 +122,8 @@ const experiences: TExperience[] = [ { title: "M.Sc Computer Science Student", c
 { title: "E-Waste Management System", companyName: "Academic Project", icon: shopify, iconBg: "#383E56", date: "2025", points: [ "Built a web-based e-waste management platform for tracking electronic waste products.", "Implemented product categorization, cashback calculation, and database integration.", "Developed responsive frontend pages using PHP, MySQL, HTML, CSS, and JavaScript.", "Focused on sustainability and digital waste management solutions.", ], }, 
 { title: "Full Stack & Mobile App Learning", companyName: "Self Learning", icon: meta, iconBg: "#E6DEDD", date: "2025 - Present", points: [ "Learning React.js, Flutter, Firebase, Tailwind CSS, and backend development technologies.", "Building portfolio projects and experimenting with modern UI designs and animations.", "Practicing API integration, authentication systems, and responsive application development.", "Continuously improving problem-solving and software engineering skills.", ], }, ];
 
-const testimonials: TTestimonial[] = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
-
+const testimonials: TTestimonial[] = [ 
+  { testimonial: "Perumal demonstrated excellent dedication and creativity while developing the E-Waste Management System project under my guidance.", name: "S. Abirami", designation: "Project Guide", company: "Nazareth College of Arts & Science", }, { testimonial: "The AI Smart Attendance System showcased strong implementation of Artificial Intelligence and Computer Vision concepts using OpenCV.", name: "Academic Reviewer", designation: "Computer Science Department", company: "Nazareth College of Arts & Science", }, { testimonial: "Perumal is highly passionate about Full Stack Development and continuously explores modern technologies like React, Flutter, Firebase, and AI systems.", name: "Technical Mentor", designation: "Developer Mentor", company: "Student Projects", }, ];
 const projects: TProject[] = [
   {
     name: "E-Waste Management System",
