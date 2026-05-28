@@ -34,13 +34,13 @@ const Hero = () => {
       </div>
 
       {/* PROFILE IMAGE */}
-      <div className="absolute right-4 top-[55%] md:top-1/2 -translate-y-1/2 z-20">
+      <div className="absolute right-4 top-[70%] md:top-1/2 -translate-y-1/2 z-20">
         <img
           src="profile.png"
           alt="profile"
           className="
-            w-[130px]
-            h-[130px]
+            w-[110px]
+            h-[110px]
             md:w-[280px]
             md:h-[280px]
             rounded-full

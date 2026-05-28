@@ -1,10 +1,14 @@
-import React, { Suspense, useEffect, useState } from "react";
+import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import {
+  OrbitControls,
+  Preload,
+  useGLTF,
+} from "@react-three/drei";
 
 import CanvasLoader from "../layout/Loader";
 
-const Computers: React.FC<{ isMobile: boolean }> = ({ isMobile }) => {
+const Computers = () => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
 
   return (
@@ -24,8 +28,8 @@ const Computers: React.FC<{ isMobile: boolean }> = ({ isMobile }) => {
 
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.5 : 0.75}
-        position={isMobile ? [0, -2.5, -1.5] : [0, -4.25, -1.5]}
+        scale={0.75}
+        position={[0, -4.25, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
@@ -33,56 +37,29 @@ const Computers: React.FC<{ isMobile: boolean }> = ({ isMobile }) => {
 };
 
 const ComputersCanvas = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 768px)");
-
-    setIsMobile(mediaQuery.matches);
-
-    const handleMediaQueryChange = (
-      event: MediaQueryListEvent
-    ) => {
-      setIsMobile(event.matches);
-    };
-
-    mediaQuery.addEventListener(
-      "change",
-      handleMediaQueryChange
-    );
-
-    return () => {
-      mediaQuery.removeEventListener(
-        "change",
-        handleMediaQueryChange
-      );
-    };
-  }, []);
-
   return (
-    <Canvas
-      frameloop="demand"
-      shadows
-      dpr={[1, 2]}
-      camera={{
-        position: isMobile ? [0, 1, 8] : [20, 3, 5],
-        fov: isMobile ? 45 : 25,
-      }}
-      gl={{ preserveDrawingBuffer: true }}
-    >
-      <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls
-          enablePan={false}
-          enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
-        />
+    <div className="hidden md:block w-full h-full">
+      <Canvas
+        frameloop="demand"
+        shadows
+        dpr={[1, 2]}
+        camera={{ position: [20, 3, 5], fov: 25 }}
+        gl={{ preserveDrawingBuffer: true }}
+      >
+        <Suspense fallback={<CanvasLoader />}>
+          <OrbitControls
+            enableZoom={false}
+            enablePan={false}
+            maxPolarAngle={Math.PI / 2}
+            minPolarAngle={Math.PI / 2}
+          />
 
-        <Computers isMobile={isMobile} />
-      </Suspense>
+          <Computers />
+        </Suspense>
 
-      <Preload all />
-    </Canvas>
+        <Preload all />
+      </Canvas>
+    </div>
   );
 };
 
