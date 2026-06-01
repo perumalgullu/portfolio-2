@@ -183,6 +183,7 @@ const projects: TProject[] = [
       },
       {
         name: "dart",
+        
         color: "pink-text-gradient",
       },
     ],

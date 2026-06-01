@@ -17,7 +17,7 @@ const Hero = () => {
       <div className="md:hidden flex flex-col items-center justify-center h-screen px-6 text-center relative z-10">
 
         <img
-          src="profile.png"
+          src={`${import.meta.env.BASE_URL}profile.png`}
           alt="profile"
           className="
             w-[140px]
@@ -73,7 +73,7 @@ const Hero = () => {
       {/* DESKTOP PROFILE IMAGE */}
       <div className="hidden md:block absolute right-10 top-1/2 -translate-y-1/2 z-20">
         <img
-          src="/profile.png"
+          src="profile.png"
           alt="profile"
           className="
             w-[280px]
