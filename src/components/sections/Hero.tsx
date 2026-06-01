@@ -15,7 +15,7 @@ const Hero = () => {
       </div>
 
       {/* MOBILE HERO */}
-<div className="md:hidden flex flex-col items-center justify-start pt-14 px-6 text-center relative z-10">
+<div className="md:hidden flex flex-col items-center justify-start pt-16 px-6 text-center relative z-10">
   <img
     src={`${import.meta.env.BASE_URL}profile.png`}
     alt="profile"
@@ -64,20 +64,20 @@ const Hero = () => {
     </a>
 
     <a
-      href={`${import.meta.env.BASE_URL}resume.pdf`}
-      download
-      className="
-        border-2
-        border-[#915EFF]
-        text-white
-        font-semibold
-        py-4
-        rounded-xl
-        text-center
-      "
-    >
-      ⬇ Download Resume
-    </a>
+  href={`${import.meta.env.BASE_URL}resume.pdf`}
+  download="S_Perumal_Resume.pdf"
+  className="
+    border-2
+    border-[#915EFF]
+    text-white
+    font-semibold
+    py-4
+    rounded-xl
+    text-center
+  "
+>
+  ⬇ Download Resume
+</a>
 
   </div>
 
