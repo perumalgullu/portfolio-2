@@ -43,37 +43,98 @@ const Hero = () => {
           <br />
           {config.hero.p[1]}
         </p>
+
+        {/* MOBILE RESUME BUTTONS */}
+        <div className="flex flex-col gap-4 mt-8 w-full max-w-xs">
+          <a
+            href={`${import.meta.env.BASE_URL}resume.pdf`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#915EFF] text-white py-3 rounded-xl font-semibold"
+          >
+            👁 View Resume
+          </a>
+
+          <a
+            href={`${import.meta.env.BASE_URL}resume.pdf`}
+            download
+            className="border-2 border-[#915EFF] text-white py-3 rounded-xl font-semibold"
+          >
+            ⬇ Download Resume
+          </a>
+        </div>
       </div>
 
       {/* DESKTOP HERO */}
-      <div
-        className={`${styles.paddingX} hidden md:flex absolute inset-0 top-[120px] max-w-7xl mx-auto flex-row items-start gap-5 z-10`}
+<div
+  className={`${styles.paddingX} hidden md:flex absolute inset-0 top-[120px] max-w-7xl mx-auto flex-row items-start gap-5 z-10`}
+>
+  <div className="flex flex-col justify-center items-center mt-5">
+    <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
+    <div className="w-1 sm:h-80 h-40 violet-gradient" />
+  </div>
+
+  <div>
+    <h1 className={`${styles.heroHeadText} text-white`}>
+      Hi, I'm{" "}
+      <span className="text-[#915EFF]">
+        {config.hero.name}
+      </span>
+    </h1>
+
+    <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+      {config.hero.p[0]}
+      <br className="sm:block hidden" />
+      {config.hero.p[1]}
+    </p>
+
+    {/* RESUME BUTTONS */}
+    <div className="mt-8 flex flex-col gap-4 w-[250px]">
+
+      <a
+        href={`${import.meta.env.BASE_URL}resume.pdf`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="
+          bg-[#915EFF]
+          text-white
+          font-semibold
+          py-4
+          rounded-xl
+          text-center
+          hover:scale-105
+          transition-all
+        "
       >
-        <div className="flex flex-col justify-center items-center mt-5">
-          <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
-          <div className="w-1 sm:h-80 h-40 violet-gradient" />
-        </div>
+        👁 View Resume
+      </a>
 
-        <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm{" "}
-            <span className="text-[#915EFF]">
-              {config.hero.name}
-            </span>
-          </h1>
+      <a
+        href={`${import.meta.env.BASE_URL}resume.pdf`}
+        download
+        className="
+          border-2
+          border-[#915EFF]
+          text-white
+          font-semibold
+          py-4
+          rounded-xl
+          text-center
+          hover:bg-[#915EFF]
+          transition-all
+        "
+      >
+        ⬇ Download Resume
+      </a>
 
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            {config.hero.p[0]}
-            <br className="sm:block hidden" />
-            {config.hero.p[1]}
-          </p>
-        </div>
-      </div>
+    </div>
+  </div>
+</div>
 
       {/* DESKTOP PROFILE IMAGE */}
       <div className="hidden md:block absolute right-10 top-1/2 -translate-y-1/2 z-20">
         <img
-          src="profile.png"
+          src={`${import.meta.env.BASE_URL}profile.png`}
           alt="profile"
           className="
             w-[280px]
@@ -87,7 +148,7 @@ const Hero = () => {
         />
       </div>
 
-      {/* SCROLL */}
+      {/* SCROLL ICON */}
       <div className="absolute xs:bottom-10 bottom-5 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
@@ -105,6 +166,7 @@ const Hero = () => {
           </div>
         </a>
       </div>
+
     </section>
   );
 };
