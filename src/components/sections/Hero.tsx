@@ -13,39 +13,38 @@ const Hero = () => {
         <ComputersCanvas />
       </div>
 
-      {/* MOBILE HERO */}
-<div className="md:hidden flex flex-col items-center pt-20 pb-8 px-6 text-center relative z-10">
+{/* MOBILE HERO */}
+<div className="md:hidden flex flex-col items-center px-6 pt-4 pb-2 text-center relative z-10">
 
   <img
     src={`${import.meta.env.BASE_URL}profile.png`}
     alt="profile"
     className="
-      w-[140px]
-      h-[140px]
+      w-[130px]
+      h-[130px]
       rounded-full
       object-cover
       border-4
       border-[#915EFF]
-      shadow-[0_0_40px_rgba(145,94,255,0.8)]
-      mb-4
+      shadow-[0_0_30px_rgba(145,94,255,0.8)]
+      mb-2
     "
   />
 
-  <h1 className="text-white font-black text-[42px] leading-tight">
+  <h1 className="text-white font-black text-[36px] leading-tight">
     Hi, I'm{" "}
     <span className="text-[#915EFF]">
       {config.hero.name}
     </span>
   </h1>
 
-  <p className="text-white-100 text-[18px] mt-2 leading-[30px]">
+  <p className="text-white-100 text-[16px] mt-1 leading-[28px]">
     {config.hero.p[0]}
     <br />
     {config.hero.p[1]}
   </p>
 
-  {/* MOBILE RESUME BUTTONS */}
-  <div className="flex flex-col gap-3 mt-6 w-full max-w-[280px]">
+  <div className="flex flex-col gap-2 mt-4 mb-2 w-full max-w-[260px]">
 
     <a
       href={`${import.meta.env.BASE_URL}resume.pdf`}
@@ -55,7 +54,7 @@ const Hero = () => {
         bg-[#915EFF]
         text-white
         font-semibold
-        py-4
+        py-3
         rounded-xl
         text-center
       "
@@ -71,7 +70,7 @@ const Hero = () => {
         border-[#915EFF]
         text-white
         font-semibold
-        py-4
+        py-3
         rounded-xl
         text-center
       "
@@ -82,6 +81,7 @@ const Hero = () => {
   </div>
 
 </div>
+
 
       {/* DESKTOP HERO */}
 <div
