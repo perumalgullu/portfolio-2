@@ -6,7 +6,7 @@ import { config } from "../../constants/config";
 
 const Hero = () => {
   return (
-    <section className="relative w-full md:h-screen mx-auto overflow-hidden bg-primary">
+    <section className="relative w-full h-screen mx-auto overflow-hidden bg-primary">
 
       {/* DESKTOP 3D MODEL */}
       <div className="hidden md:block absolute inset-0">
