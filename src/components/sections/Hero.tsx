@@ -6,7 +6,7 @@ import { config } from "../../constants/config";
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen mx-auto overflow-hidden bg-primary">
+    <section className="relative w-full md:h-screen mx-auto overflow-hidden bg-primary">
       
 
       {/* DESKTOP 3D MODEL */}
@@ -15,9 +15,7 @@ const Hero = () => {
       </div>
 
       {/* MOBILE HERO */}
-<div className="md:hidden flex flex-col items-center justify-start pt-4 px-6 text-center relative z-10">
-  
-
+<div className="md:hidden flex flex-col items-center justify-start pt-24 px-6 text-center relative z-10 min-h-screen">
   <img
     src={`${import.meta.env.BASE_URL}profile.png`}
     alt="profile"
