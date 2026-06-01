@@ -18,9 +18,16 @@ const FeedbackCard: React.FC<{ index: number } & TTestimonial> = ({
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
     className="bg-black-200 xs:w-[320px] w-full rounded-3xl p-10"
   >
-    <p className="text-[48px] font-black text-white">"</p>
+    {/* Achievement Icon */}
+    <p className="text-[48px]">
+      {index === 0
+        ? "🏆"
+        : index === 1
+        ? "💡"
+        : "♻️"}
+    </p>
 
-    <div className="mt-1">
+    <div className="mt-4">
       <p className="text-[18px] tracking-wider text-white">
         {testimonial}
       </p>
@@ -28,11 +35,11 @@ const FeedbackCard: React.FC<{ index: number } & TTestimonial> = ({
       <div className="mt-7 flex items-center justify-between gap-1">
         <div className="flex flex-1 flex-col">
           <p className="text-[16px] font-medium text-white">
-            <span className="blue-text-gradient">@</span> {name}
+            {name}
           </p>
 
           <p className="text-secondary mt-1 text-[12px]">
-            {designation} of {company}
+            {designation} {company}
           </p>
         </div>
       </div>
@@ -46,7 +53,10 @@ const Feedbacks = () => {
       <div
         className={`${styles.padding} bg-tertiary min-h-[300px] rounded-2xl`}
       >
-        <Header useMotion={true} {...config.sections.feedbacks} />
+        <Header
+          useMotion={true}
+          {...config.sections.feedbacks}
+        />
       </div>
 
       <div

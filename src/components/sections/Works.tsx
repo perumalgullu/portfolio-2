@@ -16,6 +16,7 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
   tags,
   image,
   sourceCodeLink,
+  liveDemoLink,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -33,30 +34,39 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
               alt={name}
               className="h-full w-full rounded-2xl object-cover"
             />
-            <div className="card-img_hover absolute inset-0 m-3 flex justify-end">
-              <div
-                onClick={() => window.open(sourceCodeLink, "_blank")}
-                className="black-gradient flex h-10 w-10 cursor-pointer items-center justify-center rounded-full"
-              >
-                <img
-                  src={github}
-                  alt="github"
-                  className="h-1/2 w-1/2 object-contain"
-                />
-              </div>
-            </div>
+            
           </div>
           <div className="mt-5">
             <h3 className="text-[24px] font-bold text-white">{name}</h3>
             <p className="text-secondary mt-2 text-[14px]">{description}</p>
           </div>
           <div className="mt-4 flex flex-wrap gap-2">
-            {tags.map((tag) => (
-              <p key={tag.name} className={`text-[14px] ${tag.color}`}>
-                #{tag.name}
-              </p>
-            ))}
-          </div>
+  {tags.map((tag) => (
+    <p key={tag.name} className={`text-[14px] ${tag.color}`}>
+      #{tag.name}
+    </p>
+  ))}
+</div>
+
+<div className="mt-5 flex gap-3">
+  <a
+    href={liveDemoLink}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex-1 rounded-lg border border-green-500 px-4 py-2 text-center text-white transition-all hover:bg-green-500"
+  >
+    🚀 Live Demo
+  </a>
+
+  <a
+    href={sourceCodeLink}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex-1 rounded-lg border border-[#915EFF] px-4 py-2 text-center text-white transition-all hover:bg-[#915EFF]"
+  >
+    💻 GitHub
+  </a>
+</div>
         </div>
       </Tilt>
     </motion.div>

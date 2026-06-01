@@ -91,9 +91,9 @@ export const config: TConfig = {
     },
 
     feedbacks: {
-      p: "What people say",
+      p: "Achievements",
 
-      h2: "Testimonials.",
+      h2: "Achievements & Awards",
     },
 
     works: {
