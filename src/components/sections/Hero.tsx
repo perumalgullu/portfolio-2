@@ -15,7 +15,7 @@ const Hero = () => {
       </div>
 
       {/* MOBILE HERO */}
-<div className="md:hidden flex flex-col items-center justify-start pt-24 px-6 text-center relative z-10 min-h-screen">
+<div className="md:hidden flex flex-col items-center justify-start pt-4 px-6 text-center relative z-10">
   <img
     src={`${import.meta.env.BASE_URL}profile.png`}
     alt="profile"
