@@ -190,7 +190,7 @@ const projects: TProject[] = [
   ],
   image: jobit,
   sourceCodeLink: "https://github.com/perumalgullu/AI-Based-Smart-Attendance-System",
-  liveDemoLink: "#",
+  liveDemoLink: "https://ai-attendance-system-e254.onrender.com/",
 },
   {
   name: "AI Resume Builder App",
@@ -212,7 +212,7 @@ const projects: TProject[] = [
   ],
   image: tripguide,
   sourceCodeLink: "https://github.com/PerumalGullu/your-resume-builder-repo",
-  liveDemoLink: "#",
+  liveDemoLink: "https://drive.google.com/file/d/1m1bHIHo19awYOYkRaphubD97yi6czX-4/view?usp=sharing",
 },
  {
   name: "Internship Portal Website",

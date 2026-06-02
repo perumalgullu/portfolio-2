@@ -144,7 +144,6 @@ const Contact = () => {
   icon={<LinkedInIcon />}
   className="bg-blue-600 hover:bg-blue-700"
 />
-
 <SocialButton
   href="https://mail.google.com/mail/?view=cm&fs=1&to=perumalgullu05@gmail.com"
   label="Email"
