@@ -42,7 +42,7 @@ export const navLinks: TNavLink[] = [
   },
   {
     id: "work",
-    title: "Work",
+    title: "Projects",
   },
   {
     id: "contact",
@@ -64,61 +64,32 @@ const services: TService[] = [
 
 
 const technologies: TTechnology[] = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
+  { name: "HTML5", icon: html },
+  { name: "CSS3", icon: css },
+  { name: "JavaScript", icon: javascript },
+  { name: "ReactJS", icon: reactjs },
+  { name: "Tailwind CSS", icon: tailwind },
+  { name: "Git", icon: git },
+  { name: "Firebase", icon: mongodb },
+  { name: "Python", icon: nodejs },
+  { name: "Flutter", icon: mobile },
+  { name: "OpenCV", icon: backend },
+  { name: "Machine Learning", icon: creator },
 ];
 
-const experiences: TExperience[] = [ { title: "M.Sc Computer Science Student", companyName: "Nazareth College of Arts & Science", icon: starbucks, iconBg: "#383E56", date: "2024 - Present", points: [ "Currently pursuing postgraduate studies in Computer Science with focus on software development and emerging technologies.", "Learning Full Stack Web Development, Artificial Intelligence, and Computer Vision technologies.", "Building real-world academic and personal projects using React, Flutter, Python, Firebase, and MySQL.", "Actively exploring modern UI/UX design and scalable application development.", ], }, 
+const experiences: TExperience[] = [ {
+  title: "Web Development Intern",
+  companyName: "Scale Up Institute",
+  icon: starbucks,
+  iconBg: "#383E56",
+  date: "Jun 2025 - Jul 2025",
+  points: [
+    "Developed a Bus Ticket Booking System using ReactJS and Spring Boot.",
+    "Integrated frontend components with backend APIs.",
+    "Worked with PostgreSQL and Firebase Authentication.",
+    "Collaborated with mentors in an Agile development environment.",
+  ],
+},
 { title: "AI Smart Attendance System", companyName: "Personal Project", icon: tesla, iconBg: "#E6DEDD", date: "2025", points: [ "Developed an AI-powered smart attendance system using face recognition technology.", "Implemented real-time student face detection and automatic attendance marking using OpenCV.", "Integrated automated absent notifications and CSV-based attendance management.", "Focused on improving automation and reducing manual attendance processes.", ], }, 
 { title: "E-Waste Management System", companyName: "Academic Project", icon: shopify, iconBg: "#383E56", date: "2025", points: [ "Built a web-based e-waste management platform for tracking electronic waste products.", "Implemented product categorization, cashback calculation, and database integration.", "Developed responsive frontend pages using PHP, MySQL, HTML, CSS, and JavaScript.", "Focused on sustainability and digital waste management solutions.", ], }, 
 { title: "Full Stack & Mobile App Learning", companyName: "Self Learning", icon: meta, iconBg: "#E6DEDD", date: "2025 - Present", points: [ "Learning React.js, Flutter, Firebase, Tailwind CSS, and backend development technologies.", "Building portfolio projects and experimenting with modern UI designs and animations.", "Practicing API integration, authentication systems, and responsive application development.", "Continuously improving problem-solving and software engineering skills.", ], }, ];
@@ -126,24 +97,35 @@ const experiences: TExperience[] = [ { title: "M.Sc Computer Science Student", c
 const testimonials: TTestimonial[] = [
   {
     testimonial:
-      "Won ₹2,000 Cash Prize in a Hackathon for developing an innovative software solution.",
-    name: "🏆 Hackathon Winner",
-    designation: "Cash Prize Award",
-    company: "₹2,000 • 2025",
+      "Graduated as Class Topper in M.Sc Computer Science with consistent academic excellence across multiple semesters.",
+
+    name: "🥇 Class Topper",
+
+    designation: "M.Sc Computer Science",
+
+    company: "Nazareth College of Arts & Science",
   },
+
   {
     testimonial:
-      "Received a Participation Certificate in the SA College Ideathon for presenting innovative technology ideas.",
-    name:"💡Ideathon Presenter",
-    designation: "Innovation Event",
-    company: "SA College • 2026",
+      "Earned Subject Topper distinctions in Artificial Intelligence, Machine Learning, Data Science & Analytics, Cryptography, and Theory of Computation.",
+
+    name: "📚 Academic Excellence",
+
+    designation: "Subject Topper",
+
+    company: "Computer Science Department",
   },
+
   {
     testimonial:
-      "Developed and deployed the official E-Waste Management Website for Nazareth College of Arts & Science.",
-    name: "♻️ College Project",
-    designation: "",
-    company: "Developed for Nazareth College • 2025",
+      "Recognized for presenting innovative technology ideas and participating in technical events including Ideathon and project exhibitions.",
+
+    name: "💡 Innovation & Leadership",
+
+    designation: "Technical Events",
+
+    company: "2025 - 2026",
   },
 ];
 const projects: TProject[] = [
@@ -189,7 +171,7 @@ const projects: TProject[] = [
     },
   ],
   image: jobit,
-  sourceCodeLink: "https://github.com/perumalgullu/AI-Based-Smart-Attendance-System",
+  sourceCodeLink: "https://github.com/perumalgullu/ai-attendance-system",
   liveDemoLink: "https://ai-attendance-system-e254.onrender.com/",
 },
   {
@@ -211,7 +193,7 @@ const projects: TProject[] = [
     },
   ],
   image: tripguide,
-  sourceCodeLink: "https://github.com/PerumalGullu/your-resume-builder-repo",
+  sourceCodeLink: "https://github.com/perumalgullu/ai-resume-builder",
   liveDemoLink: "https://drive.google.com/file/d/1m1bHIHo19awYOYkRaphubD97yi6czX-4/view?usp=sharing",
 },
  {

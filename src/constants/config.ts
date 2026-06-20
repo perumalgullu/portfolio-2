@@ -40,21 +40,21 @@ type TConfig = {
 
 export const config: TConfig = {
   html: {
-    title: "S Perumal  — AI Developer Portfolio",
-    fullName: "Perumal",
+    title: "S Perumal | AI Engineer & Full-Stack Developer",
+    fullName: "S Perumal",
     email: "perumalgullu05@gmail.com",
   },
 
   hero: {
     name: "Perumal",
     p: [
-      "AI Developer | Full Stack Developer",
-      "Building Smart Web & Mobile Applications",
+      "Full-Stack Developer • AI Engineer",
+      "Building Intelligent Web, Mobile & AI Solutions",
     ],
   },
 
   contact: {
-    p: "Get in touch",
+    p: "Let's Connect",
     h2: "Contact.",
 
     form: {
@@ -77,33 +77,36 @@ export const config: TConfig = {
 
   sections: {
     about: {
-      p: "Introduction",
+      p: "About Me",
 
       h2: "Overview.",
 
-      content: `I'm S. Perumal, a passionate postgraduate MSc Computer Science student at Nazareth College of Arts & Science, Chennai. I enjoy transforming ideas into real-world applications using modern web technologies and creative problem-solving techniques. I completed my Bachelor of Computer Applications (BCA) at Vel Tech Ranga Sanku Arts and Science College, Chennai with a CGPA of 7.5 in 2024. My interests include Full Stack Web Development, Backend Systems, Artificial Intelligence, Computer Vision, and learning emerging technologies. I love building responsive web applications, AI-powered systems, and innovative digital solutions that solve practical problems.`,
+      content: `I'm S. Perumal, a Full-Stack Developer and AI Enthusiast with hands-on experience in web development, mobile application development, and computer vision.
+
+I completed my MSc in Computer Science from Nazareth College of Arts & Science, Chennai, graduating as Class Topper and earning multiple Subject Topper distinctions in Artificial Intelligence, Machine Learning, Data Science, Cryptography, and Theory of Computation.
+
+During my internship at Scale Up Institute, I contributed to the development of a full-stack Bus Ticket Booking platform using ReactJS, Spring Boot, PostgreSQL, and Firebase Authentication.
+
+My expertise includes ReactJS, Flutter, Python, OpenCV, Firebase, MySQL, PostgreSQL, Machine Learning, and Computer Vision. I am passionate about developing innovative software solutions that solve real-world challenges through Artificial Intelligence, Full-Stack Development, and emerging technologies.`,
     },
 
     experience: {
-      p: "My Journey",
-
+      p: "Professional Experience",
       h2: "Experience.",
     },
 
     feedbacks: {
-      p: "Achievements",
-
-      h2: "Achievements & Awards",
+      p: "Achievements & Recognition",
+      h2: "Awards & Achievements.",
     },
 
     works: {
-      p: "My Projects",
-
+      p: "Featured Projects",
       h2: "Projects.",
 
-      content: `These projects showcase my technical skills and practical experience in Full Stack Development, Artificial Intelligence, and Mobile Application Development.
+      content: `These projects showcase my experience in Full-Stack Development, Artificial Intelligence, Computer Vision, and Mobile Application Development.
 
-Each project demonstrates my ability to build modern applications, solve complex problems, and work with technologies like React, Flutter, Python, OpenCV, Firebase, and MySQL.`,
+Each project demonstrates my ability to design, develop, and deploy scalable solutions using ReactJS, Flutter, Python, OpenCV, Firebase, MySQL, PostgreSQL, and modern development tools.`,
     },
   },
 };
