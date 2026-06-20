@@ -14,17 +14,13 @@ import {
   creator,
   web,
   javascript,
-  typescript,
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
   mongodb,
   git,
-  figma,
-  docker,
   meta,
   starbucks,
   tesla,
@@ -32,7 +28,6 @@ import {
   carrent,
   jobit,
   tripguide,
-  threejs,
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
